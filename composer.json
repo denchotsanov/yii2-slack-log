@@ -1,0 +1,23 @@
+{
+  "name": "denchotsanov/yii2-slack-log",
+  "description": "Log extension",
+  "minimum-stability": "stable",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dencho Tsanov",
+      "email": "tsanov.dencho@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "yiisoft/yii2": "^2.0.40",
+    "yiisoft/yii2-httpclient" :"^2.0.13",
+  },
+  "autoload": {
+    "psr-4": {
+      "denchotsanov\\slacklog\\": "src"
+    }
+  }
+}
