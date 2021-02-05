@@ -126,7 +126,7 @@ class Slack extends \yii\log\Target
      */
     protected function formatMessageAttachment($message)
     {
-        $message = new denchotsanov\slackbot\Message($message, $this);
+        $message = new Message($message, $this);
         $attachment = [
             'fallback' => $this->encode($this->formatMessage($message->message)),
             'title' => ucwords($message->getLevel()),
