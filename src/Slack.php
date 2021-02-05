@@ -69,7 +69,7 @@ class Slack extends \yii\log\Target
     public function init()
     {
         parent::init();
-        $this->httpClient = Instance::ensure($this->httpClient, Client::className());
+        $this->httpClient = Instance::ensure($this->httpClient, Client::class);
     }
 
     /**
@@ -126,7 +126,7 @@ class Slack extends \yii\log\Target
      */
     protected function formatMessageAttachment($message)
     {
-        $message = new Message($message, $this);
+        $message = new denchotsanov\slackbot\Message($message, $this);
         $attachment = [
             'fallback' => $this->encode($this->formatMessage($message->message)),
             'title' => ucwords($message->getLevel()),
