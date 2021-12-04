@@ -1,4 +1,4 @@
-<?
+<?php
 namespace denchotsanov\slacklog;
 
 use yii\base\BaseObject;
