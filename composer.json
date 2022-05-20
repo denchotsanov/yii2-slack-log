@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^7.0",
+    "php": "*",
     "yiisoft/yii2": "^2.0.40",
     "yiisoft/yii2-httpclient" :"^2.0.13"
   },
